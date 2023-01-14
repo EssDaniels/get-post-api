@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<form action="{{path('app_login')}}" method="POST">
+		<div>
+			<label>Email</label>
+			<input type="text" name="_username" value="{{lastUsername}}"/>
+		</div>
+
+		<div>
+			<label>Password</label>
+			<input type="password" name="_password" value="lastUsername"/>
+		</div>
+
+		<ipnut type="hidden" name="_target_path" value="/list"/>
+		<button type="submit">Login</button>
+	</form>
+{% endblock body %}
