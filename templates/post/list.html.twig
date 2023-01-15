@@ -8,7 +8,9 @@
 			<tr>
 				<th class="border border-slate-600  p-5 ">Tytuł</th>
 				<th class="border border-slate-600  p-5 ">Autor</th>
+				{% if app.user %}
 				<th class="border border-slate-600  p-5 ">Akcje</th>
+				{% endif %}
 			</tr>
 		</thead>
 		<tbody>
